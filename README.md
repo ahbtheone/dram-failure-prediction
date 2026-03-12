@@ -129,36 +129,6 @@ These features capture both the **temporal evolution of errors** and the **local
 
 ---
 
-# Repository Structure
-
-```
-dram-failure-prediction
-│
-├── single_machine
-│   ├── 01_generate_daily_features.py
-│   ├── 02_generate_row_burst_features.py
-│   ├── 03_merge_dataset.py
-│   ├── 04_train_model.py
-│   └── 05_online_eval.py
-│
-├── distributed
-│   ├── 01_split_logs.py
-│   ├── 02_collector_daily_features.py
-│   ├── 03_collector_row_burst.py
-│   ├── 04_merge_collectors.py
-│   ├── 05_train_distributed_model.py
-│   └── run_collectors_parallel.sh
-│
-├── analysis
-│   └── ce_baseline_analysis.py
-│
-├── archive
-│   └── experimental scripts used during development
-│
-└── README.md
-```
-
----
 
 # Requirements
 
